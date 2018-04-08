@@ -57,6 +57,7 @@
 		},
 
 		preload({ params, query }) {
+            //if (!process.browser) return null;
 			// the `slug` parameter is available because this file
 			// is called [slug].html
 			const { slug } = params;
@@ -64,9 +65,9 @@
 			return this.fetch(`https://api.morewhite.space/wp-json/wp/v2/posts/?slug=${slug}&_embed`).then(r => r.json()).then(post => {
 
                 post = post[0];
-                
+
 				return { post };
-			});
+			}).catch(e => console.log(e));
 		}
 	};
 </script>

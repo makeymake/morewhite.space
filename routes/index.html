@@ -32,10 +32,12 @@
 		},
 
 		preload({ params, query }) {
+            //if (!process.browser) return null;
+
 			return this.fetch(`https://api.morewhite.space/wp-json/wp/v2/posts`).then(r => r.json()).then(posts => {
 
 				return { posts };
-			});
+			}).catch(e => console.log(e));
 		}
 	};
 </script>
