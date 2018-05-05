@@ -1,37 +1,41 @@
 <svelte:head>
+
 	<title>Home | More White Space</title>
+
 </svelte:head>
 
-<Layout page='home'>
-	<h1>New this week</h1>
+<h1>New this week</h1>
 
-	{#each posts as post}
+{#each posts as post}
 
-        <a rel='prefetch' href='{post.slug}'>
+    <a rel='prefetch' href='{post.slug}'>
 
-            <h1>{post.title.rendered}</h1>
-            {#if post._embedded}
+        <h1>{post.title.rendered}</h1>
+
+        {#if post._embedded}
+
             <img src="{post._embedded['wp:featuredmedia'][0].media_details.sizes.large.source_url}" alt="">
-            {/if}
-        </a>
-	{/each}
-</Layout>
+
+        {/if}
+
+    </a>
+
+{/each}
 
 <script>
-	import Layout from './_components/Layout.html';
 
 	export default {
-		components: {
-			Layout
-		},
 
 		preload({ params, query }) {
-            //if (!process.browser) return null;
 
-			return this.fetch(`https://api.morewhite.space/wp-json/wp/v2/posts?_embed`).then(r => r.json()).then(posts => {
-                
-				return { posts };
-			}).catch(e => console.log(e));
+			return this.fetch(`https://api.morewhite.space/wp-json/wp/v2/posts?_embed`)
+                .then(r => r.json())
+                .then(posts => {
+
+				    return { posts };
+			    })
+                .catch(e => console.log(e));
 		}
 	};
+
 </script>

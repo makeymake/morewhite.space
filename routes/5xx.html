@@ -2,9 +2,7 @@
 	<title>Internal server error</title>
 </svelte:head>
 
-<Layout page='home'>
-	<h1>Internal server error</h1>
-</Layout>
+<h1>Internal server error</h1>
 
 <style>
 	h1 {
@@ -15,20 +13,9 @@
 		font-weight: 700;
 		margin: 0 0 0.5em 0;
 	}
-
 	@media (min-width: 480px) {
 		h1 {
 			font-size: 4em;
 		}
 	}
 </style>
-
-<script>
-	import Layout from './_components/Layout.html';
-
-	export default {
-		components: {
-			Layout
-		}
-	};
-</script>
