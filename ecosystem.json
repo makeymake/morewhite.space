@@ -1,0 +1,12 @@
+{
+    "apps": [{
+        "name": "morewhite.space",
+        "script": "./build/index.js",
+        "cwd": "/srv/users/serverpilot/apps/morewhite-space/public",
+        "error_file": "../logs/app.error.log",
+        "out_file": "../logs/app.out.log",
+        "env": {
+            "NODE_ENV": "production"
+        }
+    }]
+}
