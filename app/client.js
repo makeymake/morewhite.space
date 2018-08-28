@@ -1,12 +1,10 @@
 import { init } from 'sapper/runtime.js';
-import { routes } from './manifest/client.js';
-import App from './App.html';
+import { manifest } from './manifest/client.js';
 
 // `routes` is an array of route objects injected by Sapper
 init({
 	target: document.querySelector('#sapper'),
-	routes,
-	App
+	manifest
 });
 
 if (module.hot) module.hot.accept();
