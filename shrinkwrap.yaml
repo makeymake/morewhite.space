@@ -1,13 +1,13 @@
 dependencies:
   compression: 1.7.3
   polka: 0.4.0
-  sapper: 0.17.1
+  sapper: 0.20.0
   serve-static: 1.13.2
 devDependencies:
   npm-run-all: 4.1.3
-  svelte: 2.13.1
+  svelte: 2.13.4
   svelte-loader: 2.11.0
-  webpack: 4.17.1
+  webpack: 4.17.2
 packages:
   /@arr/every/1.0.0:
     dev: false
@@ -309,10 +309,10 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha1-RqoXUftqL5PuXmibsQh9SxTGwgU=
-  /bluebird/3.5.1:
+  /bluebird/3.5.2:
     dev: true
     resolution:
-      integrity: sha512-MKiLiV+I1AA596t9w1sQJ8jkiSr5+ZKi0WKrYGUn6d1Fx+Ij4tIj+m2WMQSGczs5jZVxV339chE8iwk6F64wjA==
+      integrity: sha512-dhHTWMI7kMx5whMQntl7Vr9C6BvV10lFXDAasnqnrMYhXVCzzk6IO9Fo2L75jXHT07WrOngL1WDXOp+yYS91Yg==
   /bn.js/4.11.8:
     dev: true
     resolution:
@@ -413,6 +413,7 @@ packages:
     dev: true
     resolution:
       integrity: sha1-bRu2AbB6TvztlwlBMgkwJ8lbwpg=
+      tarball: 'http://registry.npmjs.org/buffer/-/buffer-4.9.1.tgz'
   /builtin-modules/1.1.1:
     dev: true
     engines:
@@ -431,7 +432,7 @@ packages:
       integrity: sha1-0ygVQE1olpn4Wk6k+odV3ROpYEg=
   /cacache/10.0.4:
     dependencies:
-      bluebird: 3.5.1
+      bluebird: 3.5.2
       chownr: 1.0.1
       glob: 7.1.3
       graceful-fs: 4.1.11
@@ -1213,7 +1214,7 @@ packages:
       he: 1.1.1
       param-case: 2.1.1
       relateurl: 0.2.7
-      uglify-js: 3.4.8
+      uglify-js: 3.4.9
     dev: false
     engines:
       node: '>=4'
@@ -1711,6 +1712,7 @@ packages:
     hasBin: true
     resolution:
       integrity: sha1-MAV0OOrGz3+MR2fzhkjWaX11yQM=
+      tarball: 'http://registry.npmjs.org/mkdirp/-/mkdirp-0.5.1.tgz'
   /move-concurrently/1.0.1:
     dependencies:
       aproba: 1.2.0
@@ -2243,15 +2245,18 @@ packages:
     dev: true
     resolution:
       integrity: sha1-QKNmnzsHfR6UPURinhV91IAjvy4=
-  /sapper/0.17.1:
+  /sapper/0.20.0:
     dependencies:
       html-minifier: 3.5.20
+      shimport: 0.0.10
       source-map-support: 0.5.9
+      sourcemap-codec: 1.4.1
+      string-hash: 1.1.3
       tslib: 1.9.3
     dev: false
     hasBin: true
     resolution:
-      integrity: sha512-PzwDlYcx7FzCBK+21qR0y3Vl6dt8gnCkRH4RL1QXxC1mYSEpUR6WcOY2UArvGiyWtFqEIcX/Vvnpk456IKeoPw==
+      integrity: sha512-Y82mPz7T0lPBtQuB7bldBUi08//8U1MLp8GVpdR0wzM2Hnro6D1QLv0L+ohHIHDPGsYb8T6+NMEX5pdkTF+Z4A==
   /schema-utils/0.4.7:
     dependencies:
       ajv: 6.5.3
@@ -2368,6 +2373,10 @@ packages:
     dev: true
     resolution:
       integrity: sha1-9HgZSczkAmlxJ0MOo7PFR29IF2c=
+  /shimport/0.0.10:
+    dev: false
+    resolution:
+      integrity: sha512-3xPFDLmcLj87sx0OwA60qbloMQUsu6VGF97IG4RqxTf91sGeiaaXOPxM1PoQHbaTm4TOhH8zosokqLAZtuNGnA==
   /snapdragon-node/2.1.1:
     dependencies:
       define-property: 1.0.0
@@ -2437,6 +2446,10 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha512-UjgapumWlbMhkBgzT7Ykc5YXUT46F0iKu8SGXq0bcwP5dz/h0Plj6enJqjz1Zbq2l5WaqYnrVbwWOWMyF3F47g==
+  /sourcemap-codec/1.4.1:
+    dev: false
+    resolution:
+      integrity: sha512-hX1eNBNuilj8yfFnECh0DzLgwKpBLMIvmhgEhixXNui8lMLBInTI8Kyxt++RwJnMNu7cAUo635L2+N1TxMJCzA==
   /spdx-correct/3.0.0:
     dependencies:
       spdx-expression-parse: 3.0.0
@@ -2534,6 +2547,10 @@ packages:
     dev: true
     resolution:
       integrity: sha1-1cdSgl5TZ+eG944Y5EXqIjoVWVI=
+  /string-hash/1.1.3:
+    dev: false
+    resolution:
+      integrity: sha1-6Kr8CsGFW0Zmkp7X3RJ1311sgRs=
   /string.prototype.padend/3.0.0:
     dependencies:
       define-properties: 1.1.3
@@ -2578,11 +2595,11 @@ packages:
       svelte: '>1.44.0'
     resolution:
       integrity: sha512-+Q24lBhQ8KGB9flHNXjKqq9TJEIcT3VJlzsxhijqrJ9feK9bUG3TLDlosceoAXvOsjxuaHKN1ZveUbbX7J7zUQ==
-  /svelte/2.13.1:
+  /svelte/2.13.4:
     dev: true
     hasBin: true
     resolution:
-      integrity: sha512-46pTIcHnU6ZCeQxyDCxiPkOi9ecMjU4XPQMeERbHOIaH1XPlrCYYu9Q8yY6b549KYmMqW0ieT7C6uJBaap15zg==
+      integrity: sha512-4ta0FbFq3t4LsoeBljF/Hmraf0iSK95SoPBKOAINPlqUpf5Uy82m/a9LutPyNXL5thMOL3v9LqwEf37Ao8JjXg==
   /tapable/1.0.0:
     dev: true
     engines:
@@ -2669,7 +2686,7 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-r+MU0rfv4L/0eeW3xZrd16t4NZfK8Ld4SWVglYBb7ez5uXFWHuVRs6xCTrf1yirs9a4j4Y27nn7SRfO6v67XsQ==
-  /uglify-js/3.4.8:
+  /uglify-js/3.4.9:
     dependencies:
       commander: 2.17.1
       source-map: 0.6.1
@@ -2678,7 +2695,7 @@ packages:
       node: '>=0.8.0'
     hasBin: true
     resolution:
-      integrity: sha512-WatYTD84gP/867bELqI2F/2xC9PQBETn/L+7RGq9MQOA/7yFBNvY1UwXqvtILeE6n0ITwBXxp34M0/o70dzj6A==
+      integrity: sha512-8CJsbKOtEbnJsTyv6LE6m6ZKniqMiFWmm9sRbopbkGs3gMPPfd3Fh8iIA4Ykv5MgaTbqHr4BaoGLJLZNhsrW1Q==
   /uglifyjs-webpack-plugin/1.3.0:
     dependencies:
       cacache: 10.0.4
@@ -2687,7 +2704,7 @@ packages:
       serialize-javascript: 1.5.0
       source-map: 0.6.1
       uglify-es: 3.3.9
-      webpack-sources: 1.1.0
+      webpack-sources: 1.2.0
       worker-farm: 1.6.0
     dev: true
     engines:
@@ -2804,14 +2821,14 @@ packages:
     dev: true
     resolution:
       integrity: sha512-i6dHe3EyLjMmDlU1/bGQpEw25XSjkJULPuAVKCbNRefQVq48yXKUpwg538F7AZTf9kyr57zj++pQFltUa5H7yA==
-  /webpack-sources/1.1.0:
+  /webpack-sources/1.2.0:
     dependencies:
       source-list-map: 2.0.0
       source-map: 0.6.1
     dev: true
     resolution:
-      integrity: sha512-aqYp18kPphgoO5c/+NaUvEeACtZjMESmDChuD3NBciVpah3XpMEU9VAAtIaB1BsfJWWTSdv8Vv1m3T0aRk2dUw==
-  /webpack/4.17.1:
+      integrity: sha512-9BZwxR85dNsjWz3blyxdOhTgtnQvv3OEs5xofI0wPYTwu5kaWxS08UuD1oI7WLBLpRO+ylf0ofnXLXWmGb2WMw==
+  /webpack/4.17.2:
     dependencies:
       '@webassemblyjs/ast': 1.5.13
       '@webassemblyjs/helper-module-context': 1.5.13
@@ -2837,13 +2854,13 @@ packages:
       tapable: 1.0.0
       uglifyjs-webpack-plugin: 1.3.0
       watchpack: 1.6.0
-      webpack-sources: 1.1.0
+      webpack-sources: 1.2.0
     dev: true
     engines:
       node: '>=6.11.5'
     hasBin: true
     resolution:
-      integrity: sha512-vdPYogljzWPhFKDj3Gcp01Vqgu7K3IQlybc3XIdKSQHelK1C3eIQuysEUR7MxKJmdandZlQB/9BG2Jb1leJHaw==
+      integrity: sha512-hCK8FPco2Paz9FVMlo3ZdVd7Jsr7qxoiEwhd7f4dMaWBLZtc7E+/9QNee4CYHlVSvpmspWBnhFpx4MiWSl3nNg==
   /which/1.3.1:
     dependencies:
       isexe: 2.0.0
@@ -2882,8 +2899,8 @@ specifiers:
   compression: ^1.7.3
   npm-run-all: ^4.1.3
   polka: ^0.4.0
-  sapper: ^0.17.1
+  sapper: ^0.20.0
   serve-static: ^1.13.2
-  svelte: ^2.13.1
+  svelte: ^2.13.4
   svelte-loader: ^2.11.0
-  webpack: ^4.8.3
+  webpack: ^4.17.2
